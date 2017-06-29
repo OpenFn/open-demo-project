@@ -1,4 +1,4 @@
-create("vera__Beneficiary__c", "vera__GHI_ID_Number__c", fields(
+create("vera__Beneficiary__c", fields(
   field("vera__GHI_ID_Number__c", "site_school_number"),
   field("name", dataValue("parent_surname")),
   field("vera__Country__c", function(state) {
