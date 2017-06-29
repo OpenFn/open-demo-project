@@ -1,5 +1,6 @@
 each(
   dataPath("data[*]"),
+  // Use our system specific helper functions...
   dataValueSet(
     fields(
       field("dataSet", "pBOMPrpg1QX"),
@@ -7,6 +8,7 @@ each(
       field("period", "201401"),
       field("completeData", dataValue("today")),
       field("dataValues", function(state) {
+        // Or write your own JS...        
         console.log("Do anything you want in here.");
         return [
           dataElement("qrur9Dvnyt5", state.data.site_school_number),
@@ -15,5 +17,5 @@ each(
         ];
       })
     )
-  );
+  )
 );
