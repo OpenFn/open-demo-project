@@ -11,6 +11,7 @@ each(
           return "Unknown"
         }
     }),
-    relationship("vera__Parents_House__r", "vera__house_id__c", dataValue("parents_house"))
+    relationship("vera__Parents_House__r", "vera__house_id__c", dataValue("parents_house")),
+    field("vera__Photo_URL__c", dataValue("photo.url"))
   ))
 )
