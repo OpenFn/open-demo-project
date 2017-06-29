@@ -8,5 +8,5 @@ create("vera__Beneficiary__c", "vera__GHI_ID_Number__c", fields(
         return "Unknown"
       }
   }),
-  relationship("vera__Parents_House__r", "vera__house_id__c", dataValue("parents_house")),
+  relationship("vera__Parents_House__r", "vera__house_id__c", dataValue("parents_house"))
 ));
