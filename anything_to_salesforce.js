@@ -4,7 +4,7 @@ each(
   create("vera__Beneficiary__c", fields(
     field("vera__GHI_ID_Number__c", dataValue("site_school_number")),
     field("name", dataValue("parent_surname")),
-    field("vera__Gender__c", dataValue("sex")),
+    field("vera__Gender__c", dataValue("head_of_household_gender")),
     field("vera__Country__c", function(state) {
         // Or do anything in here...
         console.log("Hi, Mom!")
