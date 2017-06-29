@@ -1,10 +1,12 @@
-  upsert("vera__Beneficiary__c", "vera__GHI_ID_Number__c", fields(
-    field("vera__GHI_ID_Number__c", "8675309"),
-    field("name", sourceValue("$.data.name")),
+  create("vera__Beneficiary__c", "vera__GHI_ID_Number__c", fields(
+    field("vera__GHI_ID_Number__c", "site_school_number"),
+    field("name", dataValue("parent_surname")),
     field("vera__Country__c", function(state) {
-        return 'Kenya'
+        if (state.data.village == "Leicester") {
+          return 'England'
+        } else {
+          return "Unknown"
+        }
     }),
-    // field("vera__Country__c", "always Kenya"),
-    relationship("vera__First_Hear_House__r", "vera__house_id__c", "7"),
-    relationship("RecordType", "name", "other")
+    relationship("vera__Parents_House__r", "vera__house_id__c", dataValue("parents_house"),
   ));
