@@ -1,8 +1,9 @@
 each(
   dataPath("data[*]"),
   // Use tech-specific name functions.... santiago
+  // commits go back to github!
   create("vera__Beneficiary__c", fields(
-    field("vera__GHI_ID_Number__c", dataValue("site_school_numbers")),
+    field("vera__GHI_ID_Number__c", dataValue("site_school_number")),
     field("name", dataValue("parent_surname")),
     field("vera__Gender__c", dataValue("head_of_household_gender")),
     field("vera__Country__c", function(state) {
