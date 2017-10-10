@@ -1,9 +1,5 @@
 each(
   dataPath("data[*]"),
-  // Use tech-specific name functions.... santiago
-  // still works.
-  // commits go back to github!
-  // badfilename!?
   // show me the SHA!
   create("vera__Beneficiary__c", fields(
     field("vera__GHI_ID_Number__c", dataValue("site_school_number")),
