@@ -1,5 +1,5 @@
-// each(
-  // dataPath("data[*]"),
+each(
+  dataPath("data[*]"),
   // Clean.
   create("vera__Beneficiary__c", fields(
     field("vera__GHI_ID_Number__c", dataValue("site_school_number")),
@@ -18,4 +18,4 @@
     field("vera__photo_url__c", dataValue("photo.url"))
   ))
   
-// )
+)
