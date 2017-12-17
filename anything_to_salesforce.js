@@ -18,5 +18,4 @@ each(
     relationship("vera__Parents_House__r", "vera__house_id__c", dataValue("parents_house")),
     field("vera__photo_url__c", dataValue("photo.url"))
   ))
-  
 )
