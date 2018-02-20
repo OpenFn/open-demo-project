@@ -8,3 +8,4 @@ create("Account", fields(
 ))
 
 console.log("hi")
+console.log("hi from openfn.org")
