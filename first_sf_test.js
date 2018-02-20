@@ -7,5 +7,5 @@ create("Account", fields(
   field("Phone", "867-5309")
 ))
 
-console.log("hi")
 console.log("hi from openfn.org")
+console.log("hi from github")
