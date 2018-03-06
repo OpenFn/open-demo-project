@@ -1,19 +1,10 @@
-each(
-  dataPath("data[*]"),
-  create("vera__Beneficiary__c", fields(
-    // openfn_to _gH with Master_Support
-    // and bad job paths in the same repo
-    field("vera__GHI_ID_Number__c", dataValue("site_school_number")),
-    field('name', humanProper(state.data.parent_surname)),
-    field("vera__Gender__c", dataValue("head_of_household_gender")),
-    field("vera__Country__c", function(state) {
-        if (state.data.village == "Leicester") {
-          return 'England'
-        } else {
-          return "Unknown"
-        }
-    }),
-    relationship("vera__Parents_House__r", "vera__house_id__c", dataValue("parents_house")),
-    field("vera__photo_url__c", dataValue("photo.url"))
-  ))
-);
+create("foo", fields(
+  field("bar", "baz"),
+  field("qux", (state) => {
+    if (state.data.some_condition) {
+      "everything's gonna be alright"
+    } else {
+      throw new Error("Fugees coming to the party tonight");
+    }
+  })
+))
