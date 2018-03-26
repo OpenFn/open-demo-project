@@ -4,7 +4,8 @@ create("foo", fields(
     if (state.data.some_condition) {
       "everything is awesome!"
     } else {
-      throw new Error("everything is the worst  ¯\\\_(ツ)_/¯");
+      // throw new Error("everything is the worst  ¯\\\_(ツ)_/¯");
+      console.log("hi")
     }
   })
 ))
