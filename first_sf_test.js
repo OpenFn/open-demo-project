@@ -1,4 +1,4 @@
-console.log(state.configuration)
+console.log(state)
 
 create("Account", fields(
   field("Name", dataValue("from")),
