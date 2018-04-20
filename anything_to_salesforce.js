@@ -1,6 +1,5 @@
 each(
   dataPath("data[*]"),
-  // show me the SHA! now. now again saga today
   create("vera__Beneficiary__c", fields(
     field("vera__GHI_ID_Number__c", dataValue("site_school_number")),
     field("name", dataValue("parent_surname")),
