@@ -1,6 +1,6 @@
 each(
   dataPath("data[*]"),
-  create("vera__Beneficiary__cs", fields(
+  create("vera__Beneficiary__c", fields(
     field("vera__GHI_ID_Number__c", dataValue("site_school_number")),
     field("name", dataValue("parent_surname")),
     field("vera__Gender__c", dataValue("head_of_household_gender")),
