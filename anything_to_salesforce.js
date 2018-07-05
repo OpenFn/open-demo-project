@@ -20,6 +20,6 @@ create("vera__Beneficiary__c", fields(
         return "Unknown"
       }
   }),
-  relationship("vera__Parents_House__r", "vera__house_id__c", dataValue("parents_house")),
+  field("vera__Parents_House__c", state.references[0].records[0].Id),
   field("vera__photo_url__c", dataValue("photo.url"))
 ))
