@@ -1,3 +1,10 @@
+query('SELECT Id from vera__Parents_House__c;');
+
+alterState(state => {
+  console.log(state);
+  return state;
+})
+
 create("vera__Beneficiary__c", fields(
   field("vera__GHI_ID_Number__c", state => {
     return Date.now();
