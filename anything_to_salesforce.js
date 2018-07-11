@@ -1,4 +1,4 @@
-query('SELECT Id from vera__House__c');
+query('SELECT Id from vera__House__c'); // really
 
 alterState(state => {
   console.log(state);
