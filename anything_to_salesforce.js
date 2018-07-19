@@ -1,4 +1,4 @@
-query('SELECT Id from vera__House__c');
+query('SELECT Id from vera__House__c'); //from ofn
 
 alterState(state => {
   console.log(state);
