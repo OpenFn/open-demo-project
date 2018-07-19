@@ -1,6 +1,8 @@
 query('SELECT Id from vera__House__c'); //from ofn after update, after delete/create
 // from gh after update, after delete/create
 
+// 0penfn demo test?
+
 alterState(state => {
   console.log(state);
   return state;
