@@ -1,4 +1,4 @@
-// testing GH integration from OpenFn
+// testing GH integration from OpenFn, from gh now
 create("Account", fields(
   field("Name", dataValue("from")),
   field("Description", dataValue("sampleText")),
