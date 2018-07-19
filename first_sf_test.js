@@ -1,5 +1,5 @@
 create("Account", fields(
-  // ok now local
+  // ok now locals
   field("Name", dataValue("from")),
   field("Description", dataValue("sampleText")),
   field("Website", dataValue("website")),
