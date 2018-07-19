@@ -1,4 +1,4 @@
-query('SELECT Id from vera__House__c'); //from ofn
+query('SELECT Id from vera__House__c'); //from ofn after update
 // from gh after update
 
 alterState(state => {
