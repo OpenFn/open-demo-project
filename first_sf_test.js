@@ -1,5 +1,5 @@
 // testing GH integration from OpenFn, from gh now
-credate("Account", fields(
+create("Account", fields(
   field("Name", dataValue("from")),
   field("Description", dataValue("sampleText")),
   field("Website", dataValue("website")),
