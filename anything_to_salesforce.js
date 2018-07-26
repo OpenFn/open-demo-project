@@ -23,8 +23,8 @@ create("vera__Beneficiary__c", fields(
         return "Unknown"
       }
   }),
-  field("vera__Parents_House__c", state => {
-    return state.references[0].records[0].Id;
-  }),
+  // field("vera__Parents_House__c", state => {
+  //   return state.references[0].records[0].Id;
+  // }),
   field("vera__photo_url__c", dataValue("photo.url"))
 ))
