@@ -1,12 +1,12 @@
-query('SELECT Id from vera__House__c'); //from ofn after update, after delete/create
-// from gh after update, after delete/create
+// query('SELECT Id from vera__House__c'); //from ofn after update, after delete/create
+// // from gh after update, after delete/create
 
-// 0penfn demo test?
+// // 0penfn demo test?
 
-alterState(state => {
-  console.log(state);
-  return state;
-})
+// alterState(state => {
+//   console.log(state);
+//   return state;
+// })
 
 create("vera__Beneficiary__c", fields(
   field("vera__GHI_ID_Number__c", state => {
