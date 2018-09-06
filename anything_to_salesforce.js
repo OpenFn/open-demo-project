@@ -17,3 +17,8 @@ create("vera__Beneficiary__c", fields(
   // }),
   field("vera__photo_url__c", dataValue("photo.url"))
 ))
+
+alterState(state => {
+  console.log(state)
+  return state;
+});
