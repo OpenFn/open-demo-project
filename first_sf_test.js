@@ -6,3 +6,4 @@ create("Account", fields(
   field("Phone", "867-5309")
 ));
 
+query();
