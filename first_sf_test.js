@@ -7,3 +7,6 @@
 // ));
 
 query();
+alterState(state => {
+  console.log(state);
+})
