@@ -1,5 +1,5 @@
 // more? taylor 002 from gh
-dcreate("vera__Beneficiary__c", fields(
+create("vera__Beneficiary__c", fields(
   // field("vera__GHI_ID_Number__c", state => {
   //   return Date.now();
   // }),
