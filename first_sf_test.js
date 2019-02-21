@@ -1,3 +1,4 @@
+console.log(state);
 // testing GH integration from OpenFn, from gh now. taylor testing.
 create("Account", fields(
   field("Name", dataValue("from")),
