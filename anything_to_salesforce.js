@@ -1,4 +1,3 @@
-// more? taylor 002 from gh TEST
 create("vera__Beneficiary__c", fields(
   // field("vera__GHI_ID_Number__c", state => {
   //   return Date.now();
