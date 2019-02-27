@@ -1,4 +1,4 @@
-// testing GH integration from OpenFn, from gh now. taylor testing.
+// testing GH integration from OpenFn, from gh now. taylor testinSg.
 create("Account", fields(
   field("Name", dataValue("from")),
   field("Description", dataValue("sampleText")),
