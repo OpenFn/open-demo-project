@@ -1,5 +1,5 @@
-// testing GH integration from OpenFn, from gh now. taylor testinSg.
-create("Account", fields(
+// test
+create("Accsount", fields(
   field("Name", dataValue("from")),
   field("Description", dataValue("sampleText")),
   field("Website", dataValue("website")),
