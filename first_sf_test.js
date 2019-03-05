@@ -1,4 +1,4 @@
-// Testing the github commit service.d
+// Testing the github commit service.
 create("Account", fields(
   field("Name", dataValue("from")),
   field("Description", dataValue("sampleText")),
