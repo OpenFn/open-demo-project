@@ -1,5 +1,4 @@
 create("vera__Beneficiary__c", fields(
-  // now testing from GH to OpenFn
   // field("vera__GHI_ID_Number__c", state => {
   //   return Date.now();
   // }),
