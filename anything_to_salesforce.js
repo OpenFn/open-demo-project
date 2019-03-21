@@ -3,7 +3,7 @@ create("vera__Beneficiary__c", {
   //   return Date.now();
   // }),
   // field("name", dataValue("parent_surname")),
-  vera__Gender__c: dataValue("head_of_household_gender"),
+  vera__Gender__c: dataValue("super_change"),
   vera__Country__c: function(state) {
       // Or do anything in here...ok
       if (state.data.village == "Leicester") {
