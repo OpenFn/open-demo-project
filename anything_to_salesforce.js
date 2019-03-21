@@ -9,7 +9,7 @@ create("vera__Beneficiary__c", {
       if (state.data.village == "Leicester") {
         return 'England'
       } else {
-        return "Unknown"
+        return "Far away"
       }
   },
   // field("vera__Parents_House__c", state => {
