@@ -5,6 +5,7 @@ create("vera__Beneficiary__c", {
       if (state.data.village == "Leicester") {
         return 'England'
       } else {
+        console.log(Math.random());
         return "Far away"
       }
   },
