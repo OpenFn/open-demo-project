@@ -1,5 +1,5 @@
 create("vera__Beneficiary__c", {
-  vera__Gender__c: dataValue("super_change"),
+  vera__Gender__c: dataValue("gender"),
   vera__Country__c: function(state) {
       // Or do anything in here... ok.
       if (state.data.village == "Leicester") {
