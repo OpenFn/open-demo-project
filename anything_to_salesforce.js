@@ -13,5 +13,5 @@ create("vera__Beneficiary__c", {
       }
   },
   vera__photo_url__c: dataValue("photo.url")
-});
-console.log("Changes from GitHub succeed with existing integrations.");
+})
+console.log("Changes from GitHub succe...ed with existing integrations.");
