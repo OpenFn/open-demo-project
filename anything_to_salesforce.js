@@ -1,5 +1,5 @@
 // elixir v1.9.4
-console.log(this);
+this
 create("vera__Beneficiary__c", {
   vera__Gender__c: dataValue("gender"),
   vera__Country__c: function(state) {
