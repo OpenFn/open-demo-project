@@ -1,4 +1,4 @@
-// elixir v1.9.4
+// elixir v1.9.4, phoenix 1_4
 console.log(this.version);
 create("vera__Beneficiary__c", {
   vera__Gender__c: dataValue("gender"),
