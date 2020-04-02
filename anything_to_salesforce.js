@@ -1,4 +1,4 @@
-// 1.48.5 and back to ofg
+// 1.48.5 and back to ofg with load balancing
 console.log(this.version);
 create("vera__Beneficiary__c", {
   vera__Gender__c: dataValue("gender"),
