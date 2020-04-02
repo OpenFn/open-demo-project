@@ -1,4 +1,4 @@
-// from staging
+// after the github issue was fixed?
 console.log(this.version);
 create("vera__Beneficiary__c", {
   vera__Gender__c: dataValue("gender"),
@@ -17,5 +17,3 @@ create("vera__Beneficiary__c", {
   vera__photo_url__c: dataValue("photo.url")
 })
 console.log("Changes from GitHub succeeds with existing integrations.");
-//testing123
-// do you read me?
