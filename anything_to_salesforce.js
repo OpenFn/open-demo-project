@@ -1,4 +1,4 @@
-// console.log(__node_version);
+console.log(__node_version);
 // after the github issue was fixed?
 console.log(this.version);
 // create("vera__Beneficiary__c", {
