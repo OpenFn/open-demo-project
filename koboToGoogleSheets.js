@@ -1,4 +1,4 @@
-//Job to integrate Kobo FCS form
+//Job to integrate Kobo form with GoogleSheets
 appendValues({
   spreadsheetId: '19_PbYTgMb2rlQThoWSCANuEkxnJxZ04wKSDt687Kf8Y', //pulled from GoogleSheet URL
   range: 'Sheet1!A3', //GoogleSheet sheet tab name; A3 is where data starts
