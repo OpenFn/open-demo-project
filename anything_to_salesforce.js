@@ -1,7 +1,7 @@
 console.log(__node_version);
 // after the github issue was fixed?
 console.log(this.version);
-cdreate("vera__Beneficiary__c", {
+create("vera__Beneficiary__c", {
   vera__Gender__c: dataValue("gender"),
   vera__Country__c: function(state) {
       // Or do anything in here...
