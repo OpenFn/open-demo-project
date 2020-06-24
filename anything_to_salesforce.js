@@ -1,5 +1,5 @@
 // console.log(__node_version);
-// after the github tests were changed
+// after the github tests were changed, they still work in both drections
 console.log(this.version);
 create("vera__Beneficiary__c", {
   vera__Gender__c: dataValue("gender"),
