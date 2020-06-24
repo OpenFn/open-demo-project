@@ -1,5 +1,5 @@
 // console.log(__node_version);
-// after the github issue was fixed?
+// after the github tests were changed
 console.log(this.version);
 create("vera__Beneficiary__c", {
   vera__Gender__c: dataValue("gender"),
