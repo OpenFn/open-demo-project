@@ -1,4 +1,4 @@
-// after the github tests were changed, they still work in both drections
+// after the github tests were changed, they still work in both drections on staging
 console.log(this.version);
 create("vera__Beneficiary__c", {
   vera__Gender__c: dataValue("gender"),
