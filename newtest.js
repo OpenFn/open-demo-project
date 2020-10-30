@@ -1,5 +1,4 @@
 alterState(state => {
-  console.log(state);
   setTimeout(() => { console.log("_something in here?"); }, 50);
   console.log("any other change");
   return { ...state, thing: 7 };
