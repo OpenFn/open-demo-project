@@ -5,7 +5,7 @@ alterState(state => {
   return { ...state, thing: 7 };
   // const xx = "after return";
   // const x = "other thing!";
-  const x = 'thing here?';
+  // const x = 'thing here?';
   // very warning, many wow!
 });
 
