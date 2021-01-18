@@ -9,7 +9,7 @@ create("vera__Beneficiary__c", {
       } else {
         setTimeout(() => {
           console.log("did i?");
-        }, 200000);
+        }, 50);
         console.log(Math.random());
         return "Far away";
       }
