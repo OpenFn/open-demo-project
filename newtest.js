@@ -1,7 +1,7 @@
 alterState(state => {
   setTimeout(function(){
     return state;
-  }, 4000);
+  }, 4);
 })
 create("Account", fields(
   field("Name", dataValue("from")),
