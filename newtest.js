@@ -1,5 +1,5 @@
 alterState(state => {
-  console.log(state)
+  // console.log(state)
   return state;
   // setTimeout(function(){
   //   return state;
