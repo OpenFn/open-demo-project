@@ -1,10 +1,10 @@
-// alterState(state => {
-//   console.log("first op")
-//   return state;
-//   // setTimeout(function(){
-//   //   return state;
-//   // }, 4);
-// });
+alterState(state => {
+  console.log(state)
+  return state;
+  // setTimeout(function(){
+  //   return state;
+  // }, 4);
+});
 create("Account", fields(
   field("Name", dataValue("from")),
   // relationship("Business_Group__r", "BG_UUID__c", dataValue("DestAcct")),
