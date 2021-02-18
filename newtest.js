@@ -5,4 +5,6 @@ create("Account", fields(
   field("Phone", "867-5309")
 ));//
 
-alterState(state => state);
+alterState(state => {
+  return {...state, other: 1};
+});
