@@ -1,5 +1,6 @@
 // new source, old connection, round trip 123
 console.log(this.version);
+console.log(state);
 create("vera__Beneficiary__c", {
   vera__Gender__c: dataValue("gender"),
   vera__Country__c: function(state) {
