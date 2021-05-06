@@ -1,9 +1,10 @@
 // new source, old connection, round trip 123
 console.log(this.version);
 console.log(state);
-create("vera__Beneficiary__c", {
-  vera__Gender__c: dataValue("gender"),
-  vera__Country__c: function(state) {
+
+create("vera__Beneficiary__c", fields(
+  field('vera__Gender__c', dataValue("gender")),
+  field('vera__Country__c', state => {
       // Or do anything in here...
       if (state.data.village == "Leicester") {
         return 'England';
@@ -14,8 +15,8 @@ create("vera__Beneficiary__c", {
         console.log(Math.random());
         return "Far away";
       }
-  },
-  vera__photo_url__c: dataValue("photo.url")
-});
+  }),
+  field('vera__photo_url__c', dataValue("photo.url"))
+));
 
 console.log("Changes from GitHub succeeds with existing integrations 2 also.");
