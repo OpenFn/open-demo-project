@@ -2,6 +2,15 @@
 console.log(this.version);
 console.log(state);
 
+alterState(state => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("wait, and then return");
+      resolve(state);
+    }, 3000);   
+  });
+});
+
 create("vera__Beneficiary__c", fields(
   field('vera__Gender__c', dataValue("gender")),
   field('vera__Country__c', state => {
