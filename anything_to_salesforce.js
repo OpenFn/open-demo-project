@@ -8,7 +8,7 @@ alterState(state => {
     setTimeout(() => {
       console.log("wait, and then return");
       resolve(state);
-    }, 3000);   
+    }, 10000);   
   });
 });
 
