@@ -12,6 +12,24 @@ fn(state => {
   });
 });
 
+fn(state => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("wait, and then return 2");
+      resolve(state);
+    }, 2000);   
+  });
+});
+
+fn(state => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("wait, and then return 3");
+      resolve(state);
+    }, 2000);   
+  });
+});
+
 create("vera__Beneficiary__c", fields(
   field('vera__Gender__c', dataValue("gender")),
   field('vera__Country__c', state => {
