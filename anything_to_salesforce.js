@@ -1,7 +1,7 @@
 // new source, old connection, round trip 123
 // fail now!!!! github down? yes, but i hope they fix it soon.
-console.log(this.version);
-console.log(state);
+// console.log(this.version);
+// console.log(state);
 
 fn(state => {
   return new Promise((resolve, reject) => {
