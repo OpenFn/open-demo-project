@@ -3,12 +3,12 @@
 console.log(this.version);
 console.log(state);
 
-alterState(state => {
+fn(state => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("wait, and then return");
       resolve(state);
-    }, 10000);   
+    }, 2000);   
   });
 });
 
