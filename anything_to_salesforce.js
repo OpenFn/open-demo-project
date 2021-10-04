@@ -41,7 +41,7 @@ create("vera__Beneficiary__c", fields(
           console.log("did i?");
         }, 50);
         console.log(Math.random());
-        return "Far away";
+        return "star� � 2021-07-29";
       }
   }),
   field('vera__photo_url__c', dataValue("photo.url"))
