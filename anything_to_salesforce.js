@@ -30,21 +30,22 @@
 //   });
 // });
 
-// create("vera__Beneficiary__c", fields(
-//   field('vera__Gender__c', dataValue("gender")),
-//   field('vera__Country__c', state => {
-//       // Or do anything in here...
-//       if (state.data.village == "Leicester") {
-//         return 'England';
-//       } else {
-//         setTimeout(() => {
-//           console.log("did i?");
-//         }, 50);
-//         console.log(Math.random());
-//         return "star� � 2021-07-29";
-//       }
-//   }),
-//   field('vera__photo_url__c', dataValue("photo.url"))
-// ));
+create("vera__Beneficiary__c", fields(
+  field('vera__Gender__c', dataValue("gender")),
+  field('vera__Country__c', state => {
+      // Or do anything in here...
+      if (state.data.village == "Leicester") {
+        return 'England';
+      } else {
+        setTimeout(() => {
+          console.log("did i?");
+        }, 50);
+        console.log(Math.random());
+        return "ok"
+        // return "star� � 2021-07-29";
+      }
+  }),
+  field('vera__photo_url__c', dataValue("photo.url"))
+));
 
 // // console.log("Changes from GitHub succeeds with existing integrations 2 also.");
