@@ -3,23 +3,23 @@
 // console.log(this.version);
 // console.log(state);
 
-// fn(state => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("wait, and then return");
-//       resolve(state);
-//     }, 2000);   
-//   });
-// });
+fn(state => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("wait, and then return");
+      resolve(state);
+    }, 2000);   
+  });
+});
 
-// fn(state => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("wait, and then return 2");
-//       resolve(state);
-//     }, 2000);   
-//   });
-// });
+fn(state => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("wait, and then return 2");
+      resolve(state);
+    }, 2000);   
+  });
+});
 
 // fn(state => {
 //   return new Promise((resolve, reject) => {
