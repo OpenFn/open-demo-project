@@ -1,4 +1,4 @@
-alterState(state => { //change no gh filepaths
+alterState(state => { //change filepath AND write code
   console.log("first op worked great!")
   let arr = Array(1e8).fill("some string");
   arr.reverse();
