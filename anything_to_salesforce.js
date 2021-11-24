@@ -1,6 +1,6 @@
-// console.log(this.version); // does it work?
+// console.log(this.version);
 // console.log(state);
-// new line here
+// testing the round-trip on new jobSource.js
 
 fn(state => {
   return new Promise((resolve, reject) => {
