@@ -1,5 +1,6 @@
-// console.log(this.version); // yes.
+// console.log(this.version); // does it work?
 // console.log(state);
+// new line here
 
 fn(state => {
   return new Promise((resolve, reject) => {
