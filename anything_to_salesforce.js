@@ -1,4 +1,4 @@
-// console.log(this.version); // does it work?
+// console.log(this.version); // yes.
 // console.log(state);
 
 fn(state => {
