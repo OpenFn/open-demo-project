@@ -1,48 +1,21 @@
-// console.log(this.version);
-// console.log(state);
-
-fn(state => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("wait, and then return");
-      resolve(state);
-    }, 2000);   
-  });
-});
-
-fn(state => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("wait, and then return 2");
-      resolve(state);
-    }, 2000);   
-  });
-});
-
-// fn(state => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("wait, and then return 3");
-//       resolve(state);
-//     }, 2000);   
-//   });
-// });
-
-create("vera__Beneficiary__c", fields(
-  field('vera__Gender__c', dataValue("gender")),
-  field('vera__Country__c', state => {
-      // Or do anything in here...
-      if (state.data.village == "Leicester") {
-        return 'England';
-      } else {
-        setTimeout(() => {
-          console.log("did i?");
-        }, 50);
-        console.log(Math.random());
-        return "Far away";
-      }
-  }),
-  field('vera__photo_url__c', dataValue("photo.url"))
-));
-
-// console.log("Changes from GitHub succeeds with existing integrations 2 also.");
+each(
+  dataPath("data[*]"),
+  create("vera__Beneficiary__c", fields(
+    // distillery and eedeliver now!
+    // and a master_support commit
+    field("vera__GHI_ID_Number__c", dataValue("site_school_number")),
+    field("name", dataValue("parent_surname")),
+    field("vera__Gender__c", dataValue("head_of_household_gender")),
+    field("vera__Country__c", function(state) {
+        if (state.data.village == "Leicester") {
+          return 'England'
+        } else {
+          return "Unknown"
+        }
+    }),
+    relationship("vera__Parents_House__r", "vera__house_id__c", dataValue("parents_house")),
+    field("vera__photo_url__c", dataValue("photo.url"))
+  ))
+);
+// another change
+// big change
