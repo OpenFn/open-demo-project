@@ -17,5 +17,5 @@ each(
     field("vera__photo_url__c", dataValue("photo.url"))
   ))
 );
-// change from 'new' job inside openfn - take 2
+// change from 'old/jvqzzy' job inside openfn - take 2
 // big change
