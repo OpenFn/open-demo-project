@@ -17,6 +17,5 @@ each(
     field("vera__photo_url__c", dataValue("photo.url"))
   ))
 );
-
+// change from 'new' job inside openfn
 // big change
-// testing change from gh directly
