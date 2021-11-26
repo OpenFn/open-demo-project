@@ -2,7 +2,7 @@
 // console.log(state);
 // third project!
 // and a change from the first. nicer in sentry?
-// new stuff in sentry
+// new stuff in sentry for stu
 
 fn(state => {
   return new Promise((resolve, reject) => {
