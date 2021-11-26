@@ -4,7 +4,7 @@
 fn(state => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("wait, and then return");
+      console.log("wait, and then return please");
       resolve(state);
     }, 2000);   
   });
