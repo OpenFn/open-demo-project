@@ -1,5 +1,6 @@
 // console.log(this.version);
 // console.log(state);
+// new scheme for oauth?
 
 fn(state => {
   return new Promise((resolve, reject) => {
