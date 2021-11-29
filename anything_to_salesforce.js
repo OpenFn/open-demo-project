@@ -1,6 +1,6 @@
 // console.log(this.version);
 // console.log(state);
-// new scheme for oauth?
+// new scheme for oauth still works?
 
 fn(state => {
   return new Promise((resolve, reject) => {
