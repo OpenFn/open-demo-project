@@ -1,6 +1,6 @@
 // console.log(this.version);
 // console.log(state);
-// new scheme for oauth works in both directions after resync all good
+// new scheme for oauth works in both directions after resync all goods
 
 fn(state => {
   return new Promise((resolve, reject) => {
