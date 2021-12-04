@@ -11,24 +11,6 @@ fn(state => {
   });
 });
 
-
-fetchSurveyData({
- "surveyId": "37479",
- "afterDate": "2017-09-27",
- "postUrl": "https://www.openfn.org/inbox/your-inbox-url"
-});
-post("/myendpoint", {
-     body: {"foo": "bar"},
-     headers: {"content-type": "application/json"},
-     authentication: {username: "user", password: "pass"},
-   },
-   function(state) {
-     return state;
-   }
- );
- 
- 
-
 fn(state => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
