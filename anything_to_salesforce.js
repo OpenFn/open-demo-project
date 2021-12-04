@@ -1,6 +1,6 @@
 // console.log(this.version);
 // console.log(state);
-// new scheme for oauth works in both directions after resync all goods yebo
+// new scheme for oauth works in both directions after resync all good
 
 fn(state => {
   return new Promise((resolve, reject) => {
@@ -10,6 +10,24 @@ fn(state => {
     }, 2000);   
   });
 });
+
+
+fetchSurveyData({
+ "surveyId": "37479",
+ "afterDate": "2017-09-27",
+ "postUrl": "https://www.openfn.org/inbox/your-inbox-url"
+});
+post("/myendpoint", {
+     body: {"foo": "bar"},
+     headers: {"content-type": "application/json"},
+     authentication: {username: "user", password: "pass"},
+   },
+   function(state) {
+     return state;
+   }
+ );
+ 
+ 
 
 fn(state => {
   return new Promise((resolve, reject) => {
