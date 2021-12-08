@@ -3,7 +3,7 @@
 // new scheme for oauth works in both directions after resync all good
 
 fn(state => {
-  console.log(dataValue('formId')(state))
+  console.log(dataValue('formId')(state));
   return state;
 });
 
