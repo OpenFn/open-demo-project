@@ -1,6 +1,6 @@
-console.log(this.version);
-// console.log(state); new js 23
-// new scheme for oauth works in both directions after resync all good
+// console.log(this.version);
+// console.log(state);
+// new scheme for oauth works in both directions with PRC
 
 fn(state => {
   return new Promise((resolve, reject) => {
