@@ -1,5 +1,5 @@
 console.log(this.version);
-console.log(state);
+// console.log(state); new js
 // new scheme for oauth works in both directions after resync all good
 
 fn(state => {
