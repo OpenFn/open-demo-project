@@ -1,4 +1,4 @@
-// console.log(this.version); // confirm
+// console.log(this.version); // confirm new path
 // console.log(state); // no auto sync if opted out
 // new scheme for oauth works in both directions with PRC
 
