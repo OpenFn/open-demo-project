@@ -1,5 +1,5 @@
 // console.log(this.version);
-// new scheme for oauth works in both directions with PRC!
+// new scheme for oauth works in both directions with PRC2!
 
 // fn(state => {
 //   return new Promise((resolve, reject) => {
