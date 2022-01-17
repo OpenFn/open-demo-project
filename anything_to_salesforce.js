@@ -1,5 +1,5 @@
 // console.log(this.version);
-// new scheme for oauth works in both directions with PRC and frontEnd 2ss
+// new scheme for oauth works in both directions with PRC!
 
 // fn(state => {
 //   return new Promise((resolve, reject) => {
