@@ -1,4 +1,4 @@
-// console.log(this.version);
+console.log(state);
 // new scheme for oauth works in both directions with PRC2!
 
 // fn(state => {
