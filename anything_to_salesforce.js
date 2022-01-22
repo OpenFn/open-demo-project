@@ -1,23 +1,22 @@
-// console.log(state);
-// new scheme for oauth works in both directions with PRC2!
+// console.log(this.version);
+// new scheme for oauth works in both directions with PRC and frontEnd 2
+fn(state => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("wait, and then return please");
+      resolve(state);
+    }, 2000);   
+  });
+});
 
-// fn(state => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("wait, and then return please");
-//       resolve(state);
-//     }, 2000);   
-//   });
-// });
-
-// fn(state => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("wait, and then return 2");
-//       resolve(state);
-//     }, 2000);   
-//   });
-// });
+fn(state => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("wait, and then return 2");
+      resolve(state);
+    }, 2000);   
+  });
+});
 
 // fn(state => {
 //   return new Promise((resolve, reject) => {
@@ -27,8 +26,6 @@
 //     }, 2000);   
 //   });
 // });
-
-describe('Contact');
 
 // create("vera__Beneficiary__c", fields(
 //   field('vera__Gender__c', dataValue("gender")),
