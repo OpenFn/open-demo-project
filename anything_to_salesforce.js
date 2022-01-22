@@ -1,4 +1,4 @@
-console.log(this.state);
+// console.log(this.state);
 // new scheme for oauth works in both directions with PRC and frontEnd 2
 fn(state => {
   return new Promise((resolve, reject) => {
