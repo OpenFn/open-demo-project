@@ -1,13 +1,13 @@
-// console.log(this.version);
+console.log(this.version);
 // new scheme for oauth works in both directions with PRC and frontEnd 2
-fn(state => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("wait, and then return please");
-      resolve(state);
-    }, 2000);   
-  });
-});
+// fn(state => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("wait, and then return please");
+//       resolve(state);
+//     }, 2000);   
+//   });
+// });
 
 // fn(state => {
 //   return new Promise((resolve, reject) => {
