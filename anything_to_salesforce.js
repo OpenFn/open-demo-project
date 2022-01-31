@@ -2,8 +2,8 @@ console.log(this.version);
 console.log(dataValue('[2  ]')(state));
 
 console.log(
-  dataValue('[2  ]'),
-dataValue('[1]'),
+  dataValue('[2  ]')(state),
+dataValue('[1]')(state),
   dataValue("[' baz']")(state),
 dataValue('far.registrations[0][1].age')(state),
 dataValue("['-ad']")(state))
