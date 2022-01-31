@@ -1,5 +1,9 @@
 console.log(this.version);
-console.log(dataValue('[2  ]')(state))
+console.log(dataValue('[2  ]')(state));
+console.log(
+  dataValue("[' baz']")(state),
+dataValue('far.registrations[0][1].age')(state),
+dataValue("['-ad']")(state))
 // new scheme for oauth works in both directions with PRC and frontEnd 2
 // fn(state => {
 //   return new Promise((resolve, reject) => {
