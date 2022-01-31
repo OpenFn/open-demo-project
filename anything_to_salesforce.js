@@ -1,18 +1,38 @@
-// console.log(this.state);
+import * from 'language-dhis2';
+import * from 'language-openMRS';
+
+createPrograms(state.data);
+
+updateEvents('PVqUD2hvU4E', { events: [
+ {
+   program: 'eBAyeGv0exc',
+   orgUnit: 'DiszpKrYNg8',
+   eventDate: date,
+   status: 'COMPLETED',
+   storedBy: 'admin',
+   coordinate: {
+     latitude: '59.8',
+     longitude: '10.9',
+   },
+   dataValues: [
+     {
+       dataElement: 'qrur9Dvnyt5',
+       value: '22',
+     },
+     {
+       dataElement: 'oZg33kd9taw',
+       value: 'Male',
+     },
+   ],
+ }]
+});
+
+// console.log(this.version);
 // new scheme for oauth works in both directions with PRC and frontEnd 2
 fn(state => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("wait, and then return please");
-      resolve(state);
-    }, 2000);   
-  });
-});
-
-fn(state => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("wait, and then return 2");
       resolve(state);
     }, 2000);   
   });
