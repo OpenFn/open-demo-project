@@ -4,20 +4,20 @@ fn(state => {
   // throw "bang"
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("wait, and then return please");
+      console.log(Date.now(), 'CONN_RECVD |> PIPE FROM T-GRN001...')
       resolve(state);
     }, 2000);   
   });
 });
 
-// fn(state => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("wait, and then return 3");
-//       resolve(state);
-//     }, 2000);   
-//   });
-// });
+fn(state => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(Date.now(), 'TRAIN-GRN001: DEPARTED \ 321#bdsahjk31h->>stop')
+      resolve(state);
+    }, 2000);   
+  });
+});
 
 // create("vera__Beneficiary__c", fields(
 //   field('vera__Gender__c', dataValue("gender")),
