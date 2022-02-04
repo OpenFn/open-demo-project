@@ -1,22 +1,14 @@
-throw "oops"
-console.log(this.version);
-console.log(dataValue('[2  ]')(state));
 
-console.log(
-  dataValue('[2  ]')(state),
-dataValue('[1]')(state),
-  dataValue("[' baz']")(state),
-dataValue('far.registrations[0][1].age')(state),
-dataValue("['-ad']")(state))
 // new scheme for oauth works in both directions with PRC and frontEnd 2
-// fn(state => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("wait, and then return please");
-//       resolve(state);
-//     }, 2000);   
-//   });
-// });
+fn(state => {
+  throw "bang"
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("wait, and then return please");
+      resolve(state);
+    }, 2000);   
+  });
+});
 
 // fn(state => {
 //   return new Promise((resolve, reject) => {
