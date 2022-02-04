@@ -4,6 +4,7 @@ fn(state => {
   // throw "bang"
   return new Promise((resolve, reject) => {
     setTimeout(() => {
+      console.log(state);
       console.log(Date.now(), 'CONN_RECVD |> PIPE FROM T-GRN001...')
       resolve(state);
     }, 2000);   
