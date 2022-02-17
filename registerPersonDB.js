@@ -7,7 +7,7 @@ fn(state => {
   
   const mapping = {
     External_ID: dataValue('case_id')(state),
-    consent: dataValue('consent')(state),
+    consent: dataValue('consent')(state) === "yes" ? 1 : 0,
     age: dataValue('age')(state),
     camp: campMapping[dataValue('camp')(state)]
   }
