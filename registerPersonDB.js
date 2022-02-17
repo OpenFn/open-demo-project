@@ -20,15 +20,20 @@ fn(state => {
 upsert('demo_person', 'External_ID', state => state.mapping, { setNull: "'undefined'", logValues: true }
 )
 
-upsertMany('demo_service', 'External_ID', state => state.data.services_section.map(service => {
-  return {
-    Type: service.service_type,
-    External_ID: service.unique_id,
-    Person_ID: findValue({
-       uuid: 'Person_ID',
-       relation: 'demo_person',
-       where: { External_ID: dataValue('case_id')(state) },
-     }),
+fn(async state => {
+  const mapping = [];
+  for (service of state.data.services_section){
+     mapping.push({
+      Type: service.service_type,
+      External_ID: service.unique_id,
+      Person_ID: await findValue({
+         uuid: 'Person_ID',
+         relation: 'demo_person',
+         where: { External_ID: dataValue('case_id')(state) },
+       }),
+      })
   }
-}) )
+  return upsertMany('demo_service', 'External_ID', mapping)(state);
+})
+
 
