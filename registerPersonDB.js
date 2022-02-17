@@ -6,13 +6,16 @@ fn(state => {
   }
   
   const mapping = {
-    External_ID: dataValue('case_id', state),
+    External_ID: dataValue('case_id')(state),
     consent: dataValue('consent')(state),
     age: dataValue('age')(state),
     camp: campMapping[dataValue('camp')(state)]
   }
   
-  console.log(mapping);
-  
-  return state;
+  return {...state, mapping};
 })
+
+upsert('demo_person', 'External_ID', state => state.mapping)
+
+
+
