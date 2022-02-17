@@ -15,7 +15,7 @@ fn(state => {
   return {...state, mapping};
 })
 
-upsert('demo_person', 'External_ID', state => state.mapping, { setNull: "'undefined'" logValues: true })
+upsert('demo_person', 'External_ID', state => state.mapping, { setNull: "'undefined'", logValues: true })
 
 
 
