@@ -29,8 +29,8 @@ fn(async state => {
       Person_ID: await findValue({
          uuid: 'Person_ID',
          relation: 'demo_person',
-         where: { External_ID: dataValue('case_id')(state) },
-       }),
+         where: { External_ID: dataValue('case_id') },
+       })(state),
       })
   }
   return upsertMany('demo_service', 'External_ID', mapping)(state);
