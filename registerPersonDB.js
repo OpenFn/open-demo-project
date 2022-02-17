@@ -15,7 +15,7 @@ fn(state => {
   return {...state, mapping};
 })
 
-upsert('demo_person', 'External_ID', state => state.mapping)
+upsert('demo_person', 'External_ID', state => state.mapping, { logValues: true })
 
 
 
