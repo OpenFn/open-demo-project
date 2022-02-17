@@ -8,14 +8,14 @@ fn(state => {
   const mapping = {
     External_ID: dataValue('case_id')(state),
     consent: dataValue('consent')(state) === "yes" ? 1 : 0,
-    age: dataValue('age')(state),
+    age: undefined,
     camp: campMapping[dataValue('camp')(state)]
   }
   
   return {...state, mapping};
 })
 
-upsert('demo_person', 'External_ID', state => state.mapping, { logValues: true })
+upsert('demo_person', 'External_ID', state => state.mapping, { setNull: "'undefined'" logValues: true })
 
 
 
