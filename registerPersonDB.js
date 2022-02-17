@@ -20,7 +20,7 @@ fn(state => {
 upsert('demo_person', 'External_ID', state => state.mapping, { setNull: "'undefined'", logValues: true }
 )
 
-upsertMany('demo_service', 'External_ID', state => state.services_section.map(service => {
+upsertMany('demo_service', 'External_ID', state => state.data.services_section.map(service => {
   return {
     Type: service.service_type,
     External_ID: service.unique_id,
