@@ -1,7 +1,7 @@
 fn(state => {
   if (false) return state;
   
-  execute(
+  return execute(
   // new scheme for oauth works in both directions with PRC and frontEnd 2
 fn(state => {
   // throw "bang"
