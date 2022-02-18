@@ -1,6 +1,7 @@
 fn(state => {
-  if (true) return state;
+  if (false) return state;
   
+  execute(
   // new scheme for oauth works in both directions with PRC and frontEnd 2
 fn(state => {
   // throw "bang"
@@ -11,7 +12,7 @@ fn(state => {
       resolve(state);
     }, 2000);   
   });
-});
+}),
 
 fn(state => {
   return new Promise((resolve, reject) => {
@@ -20,7 +21,8 @@ fn(state => {
       resolve(state);
     }, 2000);   
   });
-});
+})
+)(state)
   
   
 })
