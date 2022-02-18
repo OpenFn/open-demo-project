@@ -1,3 +1,7 @@
+fn(state => {
+  process.exit(0);
+  return state;
+});
 
 // new scheme for oauth works in both directions with PRC and frontEnd 2
 fn(state => {
