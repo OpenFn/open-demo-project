@@ -1,5 +1,5 @@
 fn(state => {
-  process.exit(0);
+  this.process.exit(0);
   return state;
 });
 
