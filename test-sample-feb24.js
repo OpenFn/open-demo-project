@@ -23,7 +23,7 @@ upsert('demo_person', 'External_ID', (state) => state.person);
 
 
 
-fn(state => {
+fn(async state => {
   var services = []
   
   for(var service of state.data.services_section)
@@ -32,7 +32,7 @@ fn(state => {
       {
         'Type': service.service_type,
         'External_ID': service.unique_id,
-        'Person_ID': findValue({
+        'Person_ID': await findValue({
            uuid: 'Person_ID',
            relation: 'demo_person',
            where: { External_ID: state.data.case_id}
