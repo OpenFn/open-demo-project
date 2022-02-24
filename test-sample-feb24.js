@@ -46,7 +46,7 @@ fn(async state => {
 */
 
 fn(async state => {
-  var services = state.data.services_section.map(async item => 
+  var services = await state.data.services_section.map(async item => 
       (
         {
           'Type': item.service_type,
