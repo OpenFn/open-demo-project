@@ -21,8 +21,6 @@ fn(state => {
 upsert('demo_person', 'External_ID', (state) => state.person);
 
 
-
-/*
 fn(async state => {
   var services = []
   
@@ -43,7 +41,10 @@ fn(async state => {
   
   return {...state, services }
 })
-*/
+
+
+/* 
+pending doesn't work
 
 fn(async state => {
   var services = await state.data.services_section.map(async item => 
@@ -62,6 +63,7 @@ fn(async state => {
 
   return {...state, services }
 })
+*/
 
 
 upsertMany(
