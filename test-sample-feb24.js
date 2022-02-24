@@ -58,7 +58,7 @@ fn(async state => {
            })(state)
         }
       )
-  )
+  );
 
   return {...state, services }
 })
