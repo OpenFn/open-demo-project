@@ -22,7 +22,7 @@ upsert('demo_person', 'External_ID', (state) => state.person);
 
 
 
-
+/*
 fn(async state => {
   var services = []
   
@@ -41,6 +41,25 @@ fn(async state => {
     )
   }
   
+  return {...state, services }
+})
+*/
+
+fn(async state => {
+  var services = state.data.services_section.map(async item => 
+      (
+        {
+          'Type': item.service_type,
+          'External_ID': item.unique_id,
+          'Person_ID': await findValue({
+             uuid: 'Person_ID',
+             relation: 'demo_person',
+             where: { External_ID: state.data.case_id}
+           })(state)
+        }
+      )
+  )
+
   return {...state, services }
 })
 
