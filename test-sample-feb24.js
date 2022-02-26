@@ -57,7 +57,7 @@ fn(async (state) => {
         where: { External_ID: state.data.case_id },
       })(state),
     }));
-  services = Promise.all(services);
+  services = await Promise.all(services);
   console.log({ services });
 
   return { ...state, services };
