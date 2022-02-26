@@ -48,7 +48,7 @@ upsert('demo_person', 'External_ID', (state) => state.person);
  */
 fn(async (state) => {
   const services = await Promise.all(
-    await state.data.services_section.map(async ({ service_type, unique_id }) => ({
+     state.data.services_section.map(async ({ service_type, unique_id }) => ({
       Type: service_type,
       External_ID: unique_id,
       Person_ID: await findValue({
@@ -58,6 +58,7 @@ fn(async (state) => {
       })(state),
     }))
   );
+  console.log({ services });
 
   return { ...state, services };
 });
