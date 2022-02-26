@@ -21,49 +21,46 @@ fn(state => {
 upsert('demo_person', 'External_ID', (state) => state.person);
 
 
-fn(async state => {
-  var services = []
-  
-  for(var service of state.data.services_section)
-  {
-    services.push(
-      {
-        'Type': service.service_type,
-        'External_ID': service.unique_id,
-        'Person_ID': await findValue({
-           uuid: 'Person_ID',
-           relation: 'demo_person',
-           where: { External_ID: state.data.case_id}
-         })(state)
-      }
-    )
-  }
-  
-  return {...state, services }
-})
+/**
+ * Implementation A with for loop
+ * 
+ */
+// fn(async (state) => {
+//   var services = [];
 
+//   for (var service of state.data.services_section) {
+//     services.push({
+//       Type: service.service_type,
+//       External_ID: service.unique_id,
+//       Person_ID: await findValue({
+//         uuid: "Person_ID",
+//         relation: "demo_person",
+//         where: { External_ID: state.data.case_id },
+//       })(state),
+//     });
+//   }
 
-/* 
-pending doesn't work
+//   return { ...state, services };
+// });
 
-fn(async state => {
-  var services = await state.data.services_section.map(async item => 
-      (
-        {
-          'Type': item.service_type,
-          'External_ID': item.unique_id,
-          'Person_ID': await findValue({
-             uuid: 'Person_ID',
-             relation: 'demo_person',
-             where: { External_ID: state.data.case_id}
-           })(state)
-        }
-      )
+/**
+ * Implementation B with Array.map
+ */
+fn(async (state) => {
+  const services = await Promise.all(
+    state.data.services_section.map(async ({ service_type, unique_id }) => ({
+      Type: service_type,
+      External_ID: unique_id,
+      Person_ID: await findValue({
+        uuid: "Person_ID",
+        relation: "demo_person",
+        where: { External_ID: state.data.case_id },
+      })(state),
+    }))
   );
 
-  return {...state, services }
-})
-*/
+  return { ...state, services };
+});
 
 
 upsertMany(
