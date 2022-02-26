@@ -47,7 +47,7 @@ upsert('demo_person', 'External_ID', (state) => state.person);
  * Implementation B with Array.map
  */
 fn(async (state) => {
-  const services = await Promise.all(
+  const services = 
      state.data.services_section.map(async ({ service_type, unique_id }) => ({
       Type: service_type,
       External_ID: unique_id,
@@ -56,8 +56,7 @@ fn(async (state) => {
         relation: "demo_person",
         where: { External_ID: state.data.case_id },
       })(state),
-    }))
-  );
+    }));
   console.log({ services });
 
   return { ...state, services };
