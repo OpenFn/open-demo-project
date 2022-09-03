@@ -36,5 +36,4 @@ fn(state => {
 //   field('vera__photo_url__c', dataValue("photo.url"))
 // ));
 
-// console.log("Changes from GitHub succeeds with existing integrations 2 also.");
-// local test 2-sep-2022 again
+// console.log("Changes from GitHub succeeds with existing integrations also.");
