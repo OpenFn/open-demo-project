@@ -17,7 +17,7 @@ fn(state => {
 //       resolve(state);
 //     }, 2000);   
 //   });
-// });
+// }); //ok
 
 // create("vera__Beneficiary__c", fields(
 //   field('vera__Gender__c', dataValue("gender")),
@@ -36,5 +36,5 @@ fn(state => {
 //   field('vera__photo_url__c', dataValue("photo.url"))
 // ));
 
-// console.log("Changes from GitHub succeeds with existing integrations also.");
-// 1.99.88
+// console.log("Changes from GitHub succeeds with existing integrations 2 also.");
+// local test 2-sep-2022 again
