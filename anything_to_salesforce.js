@@ -3,6 +3,7 @@ create("vera__Beneficiary__c", fields(
   field('vera__Country__c', state => {
       // Or do anything in here...
       if (state.data.village == "Leicester") {
+        console.debug("Hello secrets")
         return 'England';
       } else {
         setTimeout(() => {
